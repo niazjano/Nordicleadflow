@@ -1627,4 +1627,110 @@ section h2 {
     .rating {
         font-size: 1rem;
     }
+}
+
+/* Trust Section (Why Remodelers Trust Us) */
+.trust-section {
+    background: var(--off-white);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.trust-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--navy-blue);
+    margin-bottom: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.trust-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.trust-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    text-align: center;
+    padding: 2.5rem 2rem 2rem 2rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 320px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+.trust-card:nth-child(1) { animation-delay: 0.1s; }
+.trust-card:nth-child(2) { animation-delay: 0.3s; }
+.trust-card:nth-child(3) { animation-delay: 0.5s; }
+
+.trust-card:hover {
+    box-shadow: 0 8px 32px rgba(26,54,93,0.10);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.trust-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--off-white);
+    color: var(--navy-blue);
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 8px rgba(26,54,93,0.04);
+}
+
+.trust-card:hover .trust-icon {
+    background: var(--navy-blue);
+    color: white;
+    transform: scale(1.08);
+}
+
+.trust-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 1.5;
+    color: inherit;
+}
+
+.trust-card h3 {
+    font-size: 1.25rem;
+    color: var(--navy-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.trust-card p {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    opacity: 0.92;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .trust-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .trust-card {
+        min-height: 0;
+        padding: 2rem 1.2rem 1.5rem 1.2rem;
+    }
+    .trust-section h2 {
+        font-size: 2rem;
+    }
 } 
