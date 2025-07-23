@@ -110,6 +110,7 @@ if (otherServicesCheckbox && otherServicesText) {
 // Form validation and submission
 if (leadForm) {
     leadForm.addEventListener('submit', async function(e) {
+        console.log('Form submission started');
         e.preventDefault();
         
         // Basic form validation
@@ -202,14 +203,18 @@ if (leadForm) {
         };
 
         try {
+            console.log('Sending data to Google Sheets:', formData);
+            
             // Send to Google Sheets endpoint
-            await fetch("https://script.google.com/macros/s/AKfycbx5ffs-U1jBbaSFWz41vc64SoshsHpId0ur2z8VbtPTquogPpg15b6cC_znSOra43ii/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbx5ffs-U1jBbaSFWz41vc64SoshsHpId0ur2z8VbtPTquogPpg15b6cC_znSOra43ii/exec", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(formData)
             });
+            
+            console.log('Response received:', response);
 
             // ✅ Show a success message and clear the form
             leadForm.reset();
@@ -221,6 +226,7 @@ if (leadForm) {
             
             // Replace form content with success message
             const formContainer = leadForm.parentElement;
+            console.log('Replacing form with success message');
             formContainer.innerHTML = `
                 <div class="success-message" style="text-align: center; padding: 2rem;">
                     <div style="color: #48bb78; font-size: 3rem; margin-bottom: 1rem;">✓</div>
