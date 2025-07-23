@@ -202,11 +202,11 @@ if (leadForm) {
         };
 
         try {
-            // Send to Zapier webhook
-            await fetch('https://hooks.zapier.com/hooks/catch/23908380/uu6mim4/', {
-                method: 'POST',
+            // Send to Google Sheets endpoint
+            await fetch("https://script.google.com/macros/s/AKfycbx5ffs-U1jBbaSFWz41vc64SoshsHpId0ur2z8VbtPTquogPpg15b6cC_znSOra43ii/exec", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 },
                 body: JSON.stringify(formData)
             });
