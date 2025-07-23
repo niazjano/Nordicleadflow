@@ -61,30 +61,35 @@ document.querySelectorAll('section').forEach(section => {
 const stickyCta = document.querySelector('.sticky-cta');
 let lastScrollTop = 0;
 
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Show sticky CTA when scrolling down and hide when scrolling up
-    if (scrollTop > lastScrollTop && scrollTop > 300) {
-        stickyCta.style.display = 'block';
-    } else {
-        stickyCta.style.display = 'none';
-    }
-    
-    lastScrollTop = scrollTop;
-});
+if (stickyCta) {
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Show sticky CTA when scrolling down and hide when scrolling up
+        if (scrollTop > lastScrollTop && scrollTop > 300) {
+            stickyCta.style.display = 'block';
+        } else {
+            stickyCta.style.display = 'none';
+        }
+        
+        lastScrollTop = scrollTop;
+    });
 
-// Add smooth scroll to sticky CTA
-stickyCta.querySelector('.cta-button').addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.querySelector('#calendar');
-    if (target) {
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+    // Add smooth scroll to sticky CTA
+    const ctaButton = stickyCta.querySelector('.cta-button');
+    if (ctaButton) {
+        ctaButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector('#calendar');
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     }
-});
+}
 
 // Lead Form Functionality
 const leadForm = document.getElementById('leadForm');
@@ -135,13 +140,17 @@ if (leadForm) {
         if (checkedServices.length === 0) {
             isValid = false;
             const checkboxGroup = document.querySelector('.checkbox-group');
-            checkboxGroup.style.border = '2px solid #e53e3e';
-            checkboxGroup.style.borderRadius = '8px';
-            checkboxGroup.style.padding = '0.5rem';
+            if (checkboxGroup) {
+                checkboxGroup.style.border = '2px solid #e53e3e';
+                checkboxGroup.style.borderRadius = '8px';
+                checkboxGroup.style.padding = '0.5rem';
+            }
         } else {
             const checkboxGroup = document.querySelector('.checkbox-group');
-            checkboxGroup.style.border = 'none';
-            checkboxGroup.style.padding = '0';
+            if (checkboxGroup) {
+                checkboxGroup.style.border = 'none';
+                checkboxGroup.style.padding = '0';
+            }
         }
         
         // Email validation
