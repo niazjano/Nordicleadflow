@@ -109,7 +109,7 @@ if (otherServicesCheckbox && otherServicesText) {
 
 // Form validation and submission
 if (leadForm) {
-    leadForm.addEventListener('submit', function(e) {
+    leadForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Basic form validation
@@ -183,9 +183,35 @@ if (leadForm) {
         `;
         submitButton.disabled = true;
         
-        // Simulate form submission (replace with actual endpoint)
-        setTimeout(() => {
-            // Reset form
+        // Prepare form data for Zapier webhook
+        const formData = {
+            fullName: document.getElementById('fullName').value,
+            businessName: document.getElementById('businessName').value,
+            website: document.getElementById('businessWebsite').value || '',
+            phone: document.getElementById('phoneNumber').value,
+            email: document.getElementById('emailAddress').value,
+            serviceArea: document.getElementById('serviceArea').value,
+            services: checkedServices.map(cb => cb.value).join(', '),
+            challenge: document.getElementById('marketingChallenge').value,
+            leadsPerMonth: document.getElementById('leadsPerMonth').value,
+            budget: document.getElementById('monthlyBudget').value,
+            startDate: document.getElementById('startTimeline').value,
+            extraNotes: document.getElementById('additionalInfo').value || '',
+            consent: document.getElementById('contactConsent').checked ? 'Yes' : 'No',
+            dateSubmitted: new Date().toISOString()
+        };
+
+        try {
+            // Send to Zapier webhook
+            await fetch('https://hooks.zapier.com/hooks/catch/23908380/uu6mim4/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // ✅ Show a success message and clear the form
             leadForm.reset();
             grecaptcha.reset();
             
@@ -193,12 +219,28 @@ if (leadForm) {
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
             
-            // Show success message
-            showNotification('Thank you! We\'ll get back to you within 24 hours.', 'success');
+            // Replace form content with success message
+            const formContainer = leadForm.parentElement;
+            formContainer.innerHTML = `
+                <div class="success-message" style="text-align: center; padding: 2rem;">
+                    <div style="color: #48bb78; font-size: 3rem; margin-bottom: 1rem;">✓</div>
+                    <h3 style="color: #48bb78; font-size: 1.5rem; margin-bottom: 1rem;">Thank you!</h3>
+                    <p style="color: #48bb78; font-size: 1.125rem;">We'll be in touch soon.</p>
+                </div>
+            `;
             
-            // Scroll to form to show success
-            leadForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 2000);
+            // Scroll to show success message
+            formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (error) {
+            console.error('Error:', error);
+            
+            // Reset button
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+            
+            // Show error message
+            showNotification('There was an error sending your information. Please try again.', 'error');
+        }
     });
 }
 
