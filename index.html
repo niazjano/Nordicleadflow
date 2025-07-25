@@ -782,6 +782,17 @@
 
     <script src="script.js"></script>
     
+    <!-- Test Form for Google Sheets Integration (Remove in production) -->
+    <div style="position: fixed; bottom: 20px; left: 20px; background: #f0f0f0; padding: 20px; border-radius: 8px; z-index: 1000; max-width: 300px;">
+        <h4 style="margin: 0 0 10px 0;">Test Google Sheets Integration</h4>
+        <form id="testForm" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" name="name" placeholder="Name" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <input type="email" name="email" placeholder="Email" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <button type="submit" style="padding: 8px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Test Submit</button>
+        </form>
+        <button onclick="testGoogleSheetsIntegration()" style="margin-top: 10px; padding: 8px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Test Function</button>
+    </div>
+    
     <!-- Sticky Booking Button -->
     <div class="sticky-cta">
         <a href="#calendar" class="cta-button">Book Your Free Call</a>

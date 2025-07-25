@@ -12,6 +12,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Google Apps Script Web App integration
+async function sendToGoogleSheet(data) {
+  const response = await fetch("https://script.google.com/macros/s/AKfycbw66Pd46FmoBow3UKzEPPcIOxx2yUvr9xfKsc5-l5sNjGafGAywDSFw6pCsIdMABF5X/exec", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams(data),
+  });
+
+  const result = await response.text();
+  console.log("Google Sheet Response:", result);
+  return result;
+}
+
 // Header scroll effect
 const header = document.querySelector('.header');
 const logo = document.querySelector('.logo img');
@@ -214,18 +229,10 @@ if (leadForm) {
         try {
             console.log('Sending data to Google Sheets:', formData);
             
-            // For now, simulate successful submission and log the data
-            // This ensures the thank you page works while we fix the Google Sheets integration
-            console.log('Form data that would be sent to Google Sheets:', JSON.stringify(formData, null, 2));
+            // Send data to Google Sheets via Apps Script Web App
+            const result = await sendToGoogleSheet(formData);
+            console.log('Google Sheet Response:', result);
             
-            // Simulate API delay
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            console.log('Form submission successful (data logged to console)');
-            
-            // TODO: Replace with actual Google Sheets API when the script is fixed
-            // The data is currently being logged to the browser console for verification
-
             // ✅ Show a success message and clear the form
             leadForm.reset();
             grecaptcha.reset();
@@ -347,3 +354,45 @@ document.querySelectorAll('a[href="#lead-form"]').forEach(link => {
         }
     });
 });
+
+// Test function for Google Sheets integration
+// You can test it by running this in the browser console:
+// testGoogleSheetsIntegration()
+function testGoogleSheetsIntegration() {
+    const testData = {
+        name: "John Doe",
+        email: "john@example.com"
+    };
+    
+    console.log('Testing Google Sheets integration with:', testData);
+    sendToGoogleSheet(testData)
+        .then(result => {
+            console.log('Test successful:', result);
+            alert('Google Sheets integration test successful! Check console for details.');
+        })
+        .catch(error => {
+            console.error('Test failed:', error);
+            alert('Google Sheets integration test failed. Check console for details.');
+        });
+}
+
+// Test form event listener
+const testForm = document.getElementById('testForm');
+if (testForm) {
+    testForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData.entries());
+        
+        try {
+            const result = await sendToGoogleSheet(data);
+            console.log('Test form submission successful:', result);
+            alert('Test form submitted successfully! Check console for details.');
+            this.reset();
+        } catch (error) {
+            console.error('Test form submission failed:', error);
+            alert('Test form submission failed. Check console for details.');
+        }
+    });
+}
