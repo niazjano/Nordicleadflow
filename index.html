@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/png lgog nordic lead flow.png">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://js-eu1.hsforms.net/forms/embed/146546335.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -389,139 +389,8 @@
                     <h2>Let's Grow Your Remodeling Business – Tell Us a Bit About You!</h2>
                     <p class="form-subtitle">Fill out this quick form and we'll get back to you within 24 hours with a personalized strategy for your business.</p>
                     
-                    <form id="leadForm" class="lead-form">
-                        <div class="form-grid">
-                            <!-- Personal Information -->
-                            <div class="form-group">
-                                <label for="fullName">Full Name *</label>
-                                <input type="text" id="fullName" name="fullName" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="businessName">Business Name *</label>
-                                <input type="text" id="businessName" name="businessName" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="businessWebsite">Business Website (if any)</label>
-                                <input type="url" id="businessWebsite" name="businessWebsite" placeholder="https://yourwebsite.com">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phoneNumber">Phone Number *</label>
-                                <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="emailAddress">Email Address *</label>
-                                <input type="email" id="emailAddress" name="emailAddress" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="serviceArea">Location / Service Area *</label>
-                                <input type="text" id="serviceArea" name="serviceArea" placeholder="e.g., Malmö, Gothenburg, Stockholm" required>
-                            </div>
-                            
-                            <!-- Services Offered -->
-                            <div class="form-group full-width">
-                                <label>What kind of services do you offer? *</label>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="bathroomRemodeling" name="services[]" value="bathroom-remodeling">
-                                        <label for="bathroomRemodeling">Bathroom Remodeling</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="kitchenRenovation" name="services[]" value="kitchen-renovation">
-                                        <label for="kitchenRenovation">Kitchen Renovation</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="fullHomeRenovation" name="services[]" value="full-home-renovation">
-                                        <label for="fullHomeRenovation">Full Home Renovation</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="plumbingElectrical" name="services[]" value="plumbing-electrical">
-                                        <label for="plumbingElectrical">Plumbing / Electrical</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="otherServices" name="services[]" value="other">
-                                        <label for="otherServices">Other</label>
-                                        <input type="text" id="otherServicesText" name="otherServicesText" placeholder="Please specify" class="other-input">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Marketing Challenge -->
-                            <div class="form-group full-width">
-                                <label for="marketingChallenge">What's your biggest marketing challenge right now? *</label>
-                                <textarea id="marketingChallenge" name="marketingChallenge" rows="3" placeholder="Tell us about your current marketing struggles..." required></textarea>
-                            </div>
-                            
-                            <!-- Leads Per Month -->
-                            <div class="form-group">
-                                <label for="leadsPerMonth">How many leads do you want per month? *</label>
-                                <select id="leadsPerMonth" name="leadsPerMonth" required>
-                                    <option value="">Select an option</option>
-                                    <option value="5-10">5–10</option>
-                                    <option value="10-20">10–20</option>
-                                    <option value="20+">20+</option>
-                                    <option value="not-sure">Not sure yet</option>
-                                </select>
-                            </div>
-                            
-                            <!-- Monthly Budget -->
-                            <div class="form-group">
-                                <label for="monthlyBudget">What's your monthly marketing budget? *</label>
-                                <select id="monthlyBudget" name="monthlyBudget" required>
-                                    <option value="">Select an option</option>
-                                    <option value="less-than-500">Less than $500</option>
-                                    <option value="500-1000">$500–$1,000</option>
-                                    <option value="1000-3000">$1,000–$3,000</option>
-                                    <option value="3000+">$3,000+</option>
-                                </select>
-                            </div>
-                            
-                            <!-- Start Timeline -->
-                            <div class="form-group">
-                                <label for="startTimeline">When would you like to get started? *</label>
-                                <select id="startTimeline" name="startTimeline" required>
-                                    <option value="">Select an option</option>
-                                    <option value="immediately">Immediately</option>
-                                    <option value="within-1-month">Within 1 month</option>
-                                    <option value="exploring-options">Just exploring options</option>
-                                </select>
-                            </div>
-                            
-                            <!-- Additional Information -->
-                            <div class="form-group full-width">
-                                <label for="additionalInfo">Anything else you'd like to share with us?</label>
-                                <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any additional information that might help us understand your business better..."></textarea>
-                            </div>
-                            
-                            <!-- Consent Checkbox -->
-                            <div class="form-group full-width">
-                                <div class="consent-checkbox">
-                                    <input type="checkbox" id="contactConsent" name="contactConsent" required>
-                                    <label for="contactConsent">✅ I agree to be contacted by Nordic Lead Flow regarding my inquiry. *</label>
-                                </div>
-                            </div>
-                            
-                            <!-- Google reCAPTCHA -->
-                            <div class="form-group full-width">
-                                <div class="g-recaptcha" data-sitekey="6Leyg4krAAAAAN7zQnmPOh13ge1DecQ4rlLfJL0i"></div>
-                            </div>
-                            
-                            <!-- Submit Button -->
-                            <div class="form-group full-width">
-                                <button type="submit" class="submit-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M22 2L11 13"></path>
-                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                    </svg>
-                                    Send My Information
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    <!-- HubSpot Form -->
+                    <div class="hs-form-frame" data-region="eu1" data-form-id="83aff507-93e3-40c1-8905-086cc2e81642" data-portal-id="146546335"></div>
                     
                     <div class="form-trust-badges">
                         <div class="trust-badge">

@@ -112,11 +112,12 @@ if (stickyCta) {
     }
 }
 
-// Lead Form Functionality
-const leadForm = document.getElementById('leadForm');
-const otherServicesCheckbox = document.getElementById('otherServices');
-const otherServicesText = document.getElementById('otherServicesText');
+// Lead Form Functionality - COMMENTED OUT (Now using HubSpot form)
+// const leadForm = document.getElementById('leadForm');
+// const otherServicesCheckbox = document.getElementById('otherServices');
+// const otherServicesText = document.getElementById('otherServicesText');
 
+/* COMMENTED OUT - Now using HubSpot form
 // Show/hide "Other" text input based on checkbox
 if (otherServicesCheckbox && otherServicesText) {
     otherServicesCheckbox.addEventListener('change', function() {
@@ -271,6 +272,7 @@ if (leadForm) {
         }
     });
 }
+*/ // END COMMENTED OUT FORM FUNCTIONALITY
 
 // Notification system
 function showNotification(message, type = 'info') {
@@ -335,16 +337,16 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Add form field focus effects
-document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(field => {
-    field.addEventListener('focus', function() {
-        this.parentElement.style.transform = 'translateY(-2px)';
-    });
-    
-    field.addEventListener('blur', function() {
-        this.parentElement.style.transform = 'translateY(0)';
-    });
-});
+// Add form field focus effects - COMMENTED OUT (Now using HubSpot form)
+// document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(field => {
+//     field.addEventListener('focus', function() {
+//         this.parentElement.style.transform = 'translateY(-2px)';
+//     });
+//     
+//     field.addEventListener('blur', function() {
+//         this.parentElement.style.transform = 'translateY(0)';
+//     });
+// });
 
 // Add smooth scroll to form from navigation
 document.querySelectorAll('a[href="#lead-form"]').forEach(link => {
