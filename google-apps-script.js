@@ -6,11 +6,14 @@ function doPost(e) {
     // Get the form data
     const formData = e.parameter;
     
+    // Log all received data for debugging
+    console.log('Received form data:', JSON.stringify(formData, null, 2));
+    
     // Get the active spreadsheet (using the provided spreadsheet ID)
     const spreadsheet = SpreadsheetApp.openById('1NmOSfIFKc74RGmESc7wns2QgPdKvWlcI2RFVpMvJh20');
     const sheet = spreadsheet.getActiveSheet();
     
-    // Prepare the data to write
+    // Prepare the data to write - ensure all fields are captured
     const rowData = [
       new Date(), // Timestamp
       formData.fullName || '',
@@ -28,18 +31,32 @@ function doPost(e) {
       formData.contactConsent || ''
     ];
     
+    // Log the data being written
+    console.log('Writing to sheet:', rowData);
+    
     // Append the data to the sheet
     sheet.appendRow(rowData);
     
     // Return success response
     return ContentService
-      .createTextOutput(JSON.stringify({ 'result': 'success' }))
+      .createTextOutput(JSON.stringify({ 
+        'result': 'success', 
+        'message': 'Data saved successfully',
+        'receivedData': formData 
+      }))
       .setMimeType(ContentService.MimeType.JSON);
       
   } catch (error) {
+    // Log the error
+    console.error('Error in doPost:', error);
+    
     // Return error response
     return ContentService
-      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': error.toString() }))
+      .createTextOutput(JSON.stringify({ 
+        'result': 'error', 
+        'error': error.toString(),
+        'stack': error.stack 
+      }))
       .setMimeType(ContentService.MimeType.JSON);
   }
 }

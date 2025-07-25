@@ -16,6 +16,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 async function sendToGoogleSheet(data) {
   const webAppUrl = "https://script.google.com/macros/s/AKfycbw66Pd46FmoBow3UKzEPPcIOxx2yUvr9xfKsc5-l5sNjGafGAywDSFw6pCsIdMABF5X/exec";
   
+  // Debug: Log what we're sending
+  console.log('Sending data to Google Apps Script:', data);
+  console.log('Data as URLSearchParams:', new URLSearchParams(data).toString());
+  
   const response = await fetch(webAppUrl, {
     method: "POST",
     headers: {
@@ -210,22 +214,21 @@ if (leadForm) {
         `;
         submitButton.disabled = true;
         
-        // Prepare form data for Zapier webhook
+        // Prepare form data for Google Apps Script
         const formData = {
             fullName: document.getElementById('fullName').value,
             businessName: document.getElementById('businessName').value,
-            website: document.getElementById('businessWebsite').value || '',
-            phone: document.getElementById('phoneNumber').value,
-            email: document.getElementById('emailAddress').value,
+            businessWebsite: document.getElementById('businessWebsite').value || '',
+            phoneNumber: document.getElementById('phoneNumber').value,
+            emailAddress: document.getElementById('emailAddress').value,
             serviceArea: document.getElementById('serviceArea').value,
             services: checkedServices.map(cb => cb.value).join(', '),
-            challenge: document.getElementById('marketingChallenge').value,
+            marketingChallenge: document.getElementById('marketingChallenge').value,
             leadsPerMonth: document.getElementById('leadsPerMonth').value,
-            budget: document.getElementById('monthlyBudget').value,
-            startDate: document.getElementById('startTimeline').value,
-            extraNotes: document.getElementById('additionalInfo').value || '',
-            consent: document.getElementById('contactConsent').checked ? 'Yes' : 'No',
-            dateSubmitted: new Date().toISOString()
+            monthlyBudget: document.getElementById('monthlyBudget').value,
+            startTimeline: document.getElementById('startTimeline').value,
+            additionalInfo: document.getElementById('additionalInfo').value || '',
+            contactConsent: document.getElementById('contactConsent').checked ? 'Yes' : 'No'
         };
 
         try {
