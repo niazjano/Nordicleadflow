@@ -6,8 +6,8 @@ function doPost(e) {
     // Get the form data
     const formData = e.parameter;
     
-    // Get the active spreadsheet (you'll need to replace this with your actual spreadsheet ID)
-    const spreadsheet = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID_HERE');
+    // Get the active spreadsheet (using the provided spreadsheet ID)
+    const spreadsheet = SpreadsheetApp.openById('1NmOSfIFKc74RGmESc7wns2QgPdKvWlcI2RFVpMvJh20');
     const sheet = spreadsheet.getActiveSheet();
     
     // Prepare the data to write
@@ -54,7 +54,7 @@ function doGet(e) {
 // 1. Go to script.google.com
 // 2. Create a new project
 // 3. Replace the default code with this script
-// 4. Replace 'YOUR_SPREADSHEET_ID_HERE' with your actual Google Sheet ID
+// 4. The spreadsheet ID is already configured: 1NmOSfIFKc74RGmESc7wns2QgPdKvWlcI2RFVpMvJh20
 // 5. Deploy as web app:
 //    - Click Deploy > New deployment
 //    - Choose "Web app"
