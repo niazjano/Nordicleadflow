@@ -376,23 +376,3 @@ function testGoogleSheetsIntegration() {
         });
 }
 
-// Test form event listener
-const testForm = document.getElementById('testForm');
-if (testForm) {
-    testForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData.entries());
-        
-        try {
-            const result = await sendToGoogleSheet(data);
-            console.log('Test form submission successful:', result);
-            alert('Test form submitted successfully! Check console for details.');
-            this.reset();
-        } catch (error) {
-            console.error('Test form submission failed:', error);
-            alert('Test form submission failed. Check console for details.');
-        }
-    });
-}
