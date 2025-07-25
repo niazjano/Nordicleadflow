@@ -14,7 +14,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Google Apps Script Web App integration
 async function sendToGoogleSheet(data) {
-  const response = await fetch("https://script.google.com/macros/s/AKfycbw66Pd46FmoBow3UKzEPPcIOxx2yUvr9xfKsc5-l5sNjGafGAywDSFw6pCsIdMABF5X/exec", {
+  // TODO: Replace this URL with your actual Google Apps Script Web App URL
+  // Get this URL from: script.google.com → Deploy → New deployment → Web app
+  const webAppUrl = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+  
+  if (webAppUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE") {
+    console.error("Please update the webAppUrl with your actual Google Apps Script Web App URL");
+    throw new Error("Google Apps Script URL not configured");
+  }
+  
+  const response = await fetch(webAppUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

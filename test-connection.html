@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Google Apps Script Connection</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-form { max-width: 400px; margin: 20px 0; }
+        input, button { margin: 10px 0; padding: 10px; width: 100%; }
+        .result { margin: 20px 0; padding: 10px; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>Test Google Apps Script Connection</h1>
+    
+    <div class="test-form">
+        <h3>Test Form Submission</h3>
+        <input type="text" id="testName" placeholder="Name" value="Test User">
+        <input type="email" id="testEmail" placeholder="Email" value="test@example.com">
+        <button onclick="testConnection()">Test Connection</button>
+    </div>
+    
+    <div id="result"></div>
+    
+    <script>
+        async function testConnection() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing connection...';
+            resultDiv.className = 'result';
+            
+            const testData = {
+                fullName: document.getElementById('testName').value,
+                emailAddress: document.getElementById('testEmail').value,
+                businessName: 'Test Business',
+                phoneNumber: '+1234567890',
+                serviceArea: 'Test Area'
+            };
+            
+            try {
+                // Replace this URL with your actual Google Apps Script Web App URL
+                const response = await fetch('YOUR_GOOGLE_APPS_SCRIPT_URL_HERE', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams(testData),
+                });
+                
+                const result = await response.text();
+                console.log('Response:', result);
+                
+                resultDiv.innerHTML = `<strong>Success!</strong><br>Response: ${result}`;
+                resultDiv.className = 'result success';
+            } catch (error) {
+                console.error('Error:', error);
+                resultDiv.innerHTML = `<strong>Error!</strong><br>${error.message}`;
+                resultDiv.className = 'result error';
+            }
+        }
+    </script>
+</body>
+</html> 
