@@ -238,6 +238,17 @@ if (leadForm) {
             const result = await sendToGoogleSheet(formData);
             console.log('Google Sheet Response:', result);
             
+            // Track lead conversion in Facebook Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Lead Form Submission',
+                    content_category: 'Lead Generation',
+                    value: 1,
+                    currency: 'USD'
+                });
+                console.log('Facebook Pixel Lead event tracked');
+            }
+            
             // ✅ Show a success message and clear the form
             leadForm.reset();
             grecaptcha.reset();
@@ -339,6 +350,14 @@ function showNotification(message, type = 'info') {
 document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(field => {
     field.addEventListener('focus', function() {
         this.parentElement.style.transform = 'translateY(-2px)';
+        
+        // Track form engagement in Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'ViewContent', {
+                content_name: 'Lead Form Engagement',
+                content_category: 'Lead Generation'
+            });
+        }
     });
     
     field.addEventListener('blur', function() {
