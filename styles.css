@@ -2151,4 +2151,64 @@ section h2 {
     }
 }
 
- 
+/* HubSpot Form Styles */
+.hs-form-frame {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Ensure HubSpot form inherits the parent styling */
+.hs-form-frame iframe {
+    border: none;
+    width: 100% !important;
+    min-height: 500px;
+}
+
+/* Style HubSpot form to match existing design */
+.hs-form-frame .hs-form {
+    font-family: 'Inter', sans-serif;
+}
+
+.hs-form-frame .hs-form .hs-fieldtype-text input,
+.hs-form-frame .hs-form .hs-fieldtype-email input,
+.hs-form-frame .hs-form .hs-fieldtype-tel input,
+.hs-form-frame .hs-form .hs-fieldtype-select select,
+.hs-form-frame .hs-form .hs-fieldtype-textarea textarea {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: white;
+    width: 100%;
+}
+
+.hs-form-frame .hs-form .hs-fieldtype-text input:focus,
+.hs-form-frame .hs-form .hs-fieldtype-email input:focus,
+.hs-form-frame .hs-form .hs-fieldtype-tel input:focus,
+.hs-form-frame .hs-form .hs-fieldtype-select select:focus,
+.hs-form-frame .hs-form .hs-fieldtype-textarea textarea:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+    outline: none;
+}
+
+.hs-form-frame .hs-form .hs-button {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hs-form-frame .hs-form .hs-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);
+}

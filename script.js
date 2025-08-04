@@ -112,11 +112,12 @@ if (stickyCta) {
     }
 }
 
-// Lead Form Functionality
-const leadForm = document.getElementById('leadForm');
-const otherServicesCheckbox = document.getElementById('otherServices');
-const otherServicesText = document.getElementById('otherServicesText');
+// Lead Form Functionality - COMMENTED OUT (Now using HubSpot form)
+// const leadForm = document.getElementById('leadForm');
+// const otherServicesCheckbox = document.getElementById('otherServices');
+// const otherServicesText = document.getElementById('otherServicesText');
 
+/* COMMENTED OUT - Now using HubSpot form
 // Show/hide "Other" text input based on checkbox
 if (otherServicesCheckbox && otherServicesText) {
     otherServicesCheckbox.addEventListener('change', function() {
@@ -282,6 +283,7 @@ if (leadForm) {
         }
     });
 }
+*/ // END COMMENTED OUT FORM FUNCTIONALITY
 
 // Notification system
 function showNotification(message, type = 'info') {
