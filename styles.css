@@ -3694,3 +3694,1964 @@ section h2 {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 }
+
+/* Comprehensive Mobile Optimization for All Sections */
+@media (max-width: 768px) {
+    /* Global section mobile optimization */
+    section {
+        padding: 3rem 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    section .container {
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    section h3 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    section p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Hero Section Mobile Optimization */
+    .hero {
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .hero .subheadline {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        min-height: 48px;
+        border-radius: 12px;
+    }
+    
+    /* Why Trust Us Section Mobile Optimization */
+    .why-trust {
+        padding: 3rem 0;
+    }
+    
+    .why-trust h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .trust-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .trust-item {
+        padding: 1.5rem;
+        border-radius: 16px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+    
+    .trust-item .icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .trust-item h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+    
+    /* Testimonials Section Mobile Optimization */
+    .testimonials {
+        padding: 3rem 0;
+    }
+    
+    .testimonials h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .testimonials .monogram-watermark {
+        font-size: 12rem;
+        opacity: 0.02;
+    }
+    
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .testimonial-card {
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    
+    .testimonial-content {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content .quote {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-author {
+        gap: 1rem;
+    }
+    
+    .author-info h4 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .author-info p {
+        font-size: 0.875rem;
+        margin-bottom: 0;
+    }
+    
+    .verified-badge {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .rating {
+        font-size: 1.125rem;
+        margin-top: 1rem;
+    }
+    
+    /* Trust Section Mobile Optimization */
+    .trust-section {
+        padding: 3rem 0;
+    }
+    
+    .trust-section h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .trust-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .trust-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+        text-align: center;
+    }
+    
+    .trust-card h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .trust-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    
+    /* Stats Section Mobile Optimization */
+    .stats {
+        padding: 3rem 0;
+    }
+    
+    .stats h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .stat-item {
+        padding: 1.5rem;
+        border-radius: 16px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .stat-item p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    
+    /* How It Works Section Mobile Optimization */
+    .how-it-works {
+        padding: 3rem 0;
+    }
+    
+    .how-it-works h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .step {
+        padding: 1.5rem;
+        border-radius: 16px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+    
+    .step h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .step p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    
+    .trust-boosters {
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+    
+    .trust-booster-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .trust-badges-mini {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .trust-badge-mini {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        font-size: 0.875rem;
+    }
+    
+    .how-it-works .cta-button {
+        margin: 2rem 1rem 0;
+        width: calc(100% - 2rem);
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        min-height: 48px;
+        border-radius: 12px;
+    }
+    
+    /* Pricing Section Mobile Optimization */
+    .pricing {
+        padding: 3rem 0;
+    }
+    
+    .pricing h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .ad-tier-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+        border-radius: 16px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .card h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .budget {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .card small {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+    
+    /* Limited Offer Section Mobile Optimization */
+    .limited-offer {
+        padding: 3rem 0;
+    }
+    
+    .limited-offer .monogram-watermark {
+        font-size: 12rem;
+        opacity: 0.02;
+    }
+    
+    .limited-offer h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .limited-offer .subtext {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .text-content {
+        text-align: center;
+    }
+    
+    .cta-content {
+        text-align: center;
+    }
+    
+    .limited-offer .cta-button {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        min-height: 48px;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .trust-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        background: rgba(26, 54, 93, 0.05);
+        border-radius: 8px;
+        font-size: 0.875rem;
+    }
+    
+    .scandinavian-guarantee {
+        margin: 2rem 1rem;
+        padding: 1rem;
+        background: rgba(26, 54, 93, 0.05);
+        border-radius: 12px;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    
+    .success-metric {
+        margin: 1.5rem 1rem 0;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--navy-blue);
+    }
+    
+    /* About + Contact Section Mobile Optimization */
+    .about-contact {
+        padding: 3rem 0;
+    }
+    
+    .about-contact .monogram-watermark {
+        font-size: 12rem;
+        opacity: 0.02;
+    }
+    
+    .about-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .founder-quote {
+        padding: 1.5rem;
+        border-radius: 16px;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    
+    .founder-quote p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .founder-quote cite {
+        font-size: 0.875rem;
+    }
+    
+    .contact-box {
+        padding: 1.5rem;
+        border-radius: 16px;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    
+    .contact-box h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-list li {
+        padding: 0.75rem 0;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .sweden-badge {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+        border-radius: 25px;
+        margin: 1.5rem auto 0;
+        display: inline-flex;
+    }
+    
+    .about-image {
+        height: 250px;
+        border-radius: 16px;
+    }
+    
+    .image-overlay {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    
+    .image-overlay .trust-badge {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+        border-radius: 25px;
+    }
+    
+    /* Footer Mobile Optimization */
+    .footer {
+        padding: 3rem 0 2rem;
+    }
+    
+    .footer::before {
+        font-size: 200px;
+        opacity: 0.01;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .footer-column {
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        height: 40px;
+        margin: 0 auto;
+    }
+    
+    .tagline {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .footer-links {
+        gap: 0.75rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+    
+    .contact-info li {
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .social-link {
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.85rem;
+    }
+    
+    /* Sticky CTA Mobile Optimization */
+    .sticky-cta {
+        display: block;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+    
+    .sticky-cta .cta-button {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        min-height: 48px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(26, 54, 93, 0.3);
+    }
+}
+
+/* Additional Mobile Breakpoints for Perfect Alignment */
+@media (max-width: 600px) {
+    /* Global section mobile optimization for smaller screens */
+    section {
+        padding: 2.5rem 0;
+    }
+    
+    section .container {
+        padding: 0 0.75rem;
+    }
+    
+    section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    section h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    section p {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Hero Section - Smaller screens */
+    .hero {
+        padding: 5rem 0 2.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.25rem;
+        padding: 0 0.25rem;
+    }
+    
+    .hero .subheadline {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .hero .cta-button {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+        min-height: 44px;
+    }
+    
+    /* Why Trust Us - Smaller screens */
+    .why-trust {
+        padding: 2.5rem 0;
+    }
+    
+    .why-trust h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .trust-grid {
+        gap: 1.25rem;
+        margin: 0 0.75rem;
+    }
+    
+    .trust-item {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .trust-item .icon {
+        font-size: 2.25rem;
+    }
+    
+    .trust-item h3 {
+        font-size: 1rem;
+    }
+    
+    /* Testimonials - Smaller screens */
+    .testimonials {
+        padding: 2.5rem 0;
+    }
+    
+    .testimonials h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .testimonials .monogram-watermark {
+        font-size: 10rem;
+    }
+    
+    .testimonials-grid {
+        gap: 1.25rem;
+        margin: 0 0.75rem;
+    }
+    
+    .testimonial-content {
+        padding: 1.25rem;
+    }
+    
+    .testimonial-content .quote {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .author-info h4 {
+        font-size: 0.95rem;
+    }
+    
+    .author-info p {
+        font-size: 0.8rem;
+    }
+    
+    .verified-badge {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.7rem;
+    }
+    
+    .rating {
+        font-size: 1rem;
+        margin-top: 0.875rem;
+    }
+    
+    /* Trust Section - Smaller screens */
+    .trust-section {
+        padding: 2.5rem 0;
+    }
+    
+    .trust-section h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .trust-cards {
+        gap: 1.25rem;
+        margin: 0 0.75rem;
+    }
+    
+    .trust-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .trust-card h3 {
+        font-size: 1rem;
+    }
+    
+    .trust-card p {
+        font-size: 0.9rem;
+    }
+    
+    /* Stats Section - Smaller screens */
+    .stats {
+        padding: 2.5rem 0;
+    }
+    
+    .stats h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .stats-grid {
+        gap: 1.25rem;
+        margin: 0 0.75rem;
+    }
+    
+    .stat-item {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .stat-number {
+        font-size: 2.25rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .stat-item p {
+        font-size: 0.95rem;
+    }
+    
+    /* How It Works - Smaller screens */
+    .how-it-works {
+        padding: 2.5rem 0;
+    }
+    
+    .how-it-works h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .steps {
+        gap: 1.5rem;
+        margin: 0 0.75rem;
+    }
+    
+    .step {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .step h3 {
+        font-size: 1rem;
+    }
+    
+    .step p {
+        font-size: 0.9rem;
+    }
+    
+    .trust-boosters {
+        margin: 1.5rem 0.75rem;
+    }
+    
+    .trust-booster-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .trust-badges-mini {
+        gap: 0.875rem;
+    }
+    
+    .trust-badge-mini {
+        padding: 0.625rem 0.875rem;
+        font-size: 0.8rem;
+    }
+    
+    .how-it-works .cta-button {
+        margin: 1.5rem 0.75rem 0;
+        width: calc(100% - 1.5rem);
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+        min-height: 44px;
+    }
+    
+    /* Pricing Section - Smaller screens */
+    .pricing {
+        padding: 2.5rem 0;
+    }
+    
+    .pricing h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .ad-tier-cards {
+        gap: 1.25rem;
+        margin: 0 0.75rem;
+    }
+    
+    .card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .card h3 {
+        font-size: 1rem;
+    }
+    
+    .budget {
+        font-size: 1.125rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .card small {
+        font-size: 0.8rem;
+    }
+    
+    /* Limited Offer - Smaller screens */
+    .limited-offer {
+        padding: 2.5rem 0;
+    }
+    
+    .limited-offer .monogram-watermark {
+        font-size: 10rem;
+    }
+    
+    .limited-offer h2 {
+        padding: 0 0.5rem;
+    }
+    
+    .limited-offer .subtext {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+    
+    .content-wrapper {
+        gap: 1.5rem;
+        margin: 0 0.75rem;
+    }
+    
+    .limited-offer .cta-button {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+        min-height: 44px;
+        margin-bottom: 1.25rem;
+    }
+    
+    .trust-list {
+        gap: 0.875rem;
+    }
+    
+    .trust-item {
+        padding: 0.625rem 0.875rem;
+        font-size: 0.8rem;
+    }
+    
+    .scandinavian-guarantee {
+        margin: 1.5rem 0.75rem;
+        padding: 0.875rem;
+        font-size: 0.8rem;
+    }
+    
+    .success-metric {
+        margin: 1.25rem 0.75rem 0;
+        font-size: 0.8rem;
+    }
+    
+    /* About + Contact - Smaller screens */
+    .about-contact {
+        padding: 2.5rem 0;
+    }
+    
+    .about-contact .monogram-watermark {
+        font-size: 10rem;
+    }
+    
+    .about-wrapper {
+        gap: 1.5rem;
+        margin: 0 0.75rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .founder-quote {
+        padding: 1.25rem;
+        border-radius: 12px;
+        margin: 1.5rem 0;
+    }
+    
+    .founder-quote p {
+        font-size: 0.95rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .founder-quote cite {
+        font-size: 0.8rem;
+    }
+    
+    .contact-box {
+        padding: 1.25rem;
+        border-radius: 12px;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-box h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .contact-list li {
+        padding: 0.625rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .sweden-badge {
+        padding: 0.625rem 1rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+    
+    .about-image {
+        height: 200px;
+        border-radius: 12px;
+    }
+    
+    .image-overlay {
+        bottom: 0.75rem;
+        left: 0.75rem;
+        right: 0.75rem;
+    }
+    
+    .image-overlay .trust-badge {
+        padding: 0.625rem 1rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+    
+    /* Footer - Smaller screens */
+    .footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+    
+    .footer::before {
+        font-size: 150px;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-column {
+        gap: 0.875rem;
+    }
+    
+    .footer-logo {
+        height: 35px;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links {
+        gap: 0.625rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+        padding: 0.375rem 0;
+    }
+    
+    .contact-info li {
+        font-size: 0.85rem;
+    }
+    
+    .social-links {
+        gap: 0.875rem;
+    }
+    
+    .social-link {
+        padding: 0.625rem;
+        border-radius: 6px;
+    }
+    
+    .footer-bottom {
+        padding-top: 1.25rem;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+    }
+    
+    /* Sticky CTA - Smaller screens */
+    .sticky-cta {
+        bottom: 0.75rem;
+        left: 0.75rem;
+        right: 0.75rem;
+    }
+    
+    .sticky-cta .cta-button {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.95rem;
+        min-height: 44px;
+        border-radius: 10px;
+    }
+}
+
+/* Final Mobile Breakpoints for Very Small Screens */
+@media (max-width: 480px) {
+    /* Global section mobile optimization for very small screens */
+    section {
+        padding: 2rem 0;
+    }
+    
+    section .container {
+        padding: 0 0.5rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    /* Hero Section - Very small screens */
+    .hero {
+        padding: 4rem 0 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        padding: 0;
+    }
+    
+    .hero .subheadline {
+        font-size: 1rem;
+        padding: 0 0.25rem;
+    }
+    
+    .hero .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        min-height: 42px;
+        border-radius: 10px;
+    }
+    
+    /* Why Trust Us - Very small screens */
+    .why-trust {
+        padding: 2rem 0;
+    }
+    
+    .why-trust h2 {
+        padding: 0;
+    }
+    
+    .trust-grid {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .trust-item {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .trust-item .icon {
+        font-size: 2rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .trust-item h3 {
+        font-size: 0.95rem;
+    }
+    
+    /* Testimonials - Very small screens */
+    .testimonials {
+        padding: 2rem 0;
+    }
+    
+    .testimonials h2 {
+        padding: 0;
+    }
+    
+    .testimonials .monogram-watermark {
+        font-size: 8rem;
+    }
+    
+    .testimonials-grid {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .testimonial-content {
+        padding: 1rem;
+    }
+    
+    .testimonial-content .quote {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .author-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .author-info p {
+        font-size: 0.75rem;
+    }
+    
+    .verified-badge {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
+    
+    .rating {
+        font-size: 0.95rem;
+        margin-top: 0.75rem;
+    }
+    
+    /* Trust Section - Very small screens */
+    .trust-section {
+        padding: 2rem 0;
+    }
+    
+    .trust-section h2 {
+        padding: 0;
+    }
+    
+    .trust-cards {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .trust-card {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .trust-card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .trust-card p {
+        font-size: 0.85rem;
+    }
+    
+    /* Stats Section - Very small screens */
+    .stats {
+        padding: 2rem 0;
+    }
+    
+    .stats h2 {
+        padding: 0;
+    }
+    
+    .stats-grid {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-item p {
+        font-size: 0.9rem;
+    }
+    
+    /* How It Works - Very small screens */
+    .how-it-works {
+        padding: 2rem 0;
+    }
+    
+    .how-it-works h2 {
+        padding: 0;
+    }
+    
+    .steps {
+        gap: 1.25rem;
+        margin: 0 0.5rem;
+    }
+    
+    .step {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .step h3 {
+        font-size: 0.95rem;
+    }
+    
+    .step p {
+        font-size: 0.85rem;
+    }
+    
+    .trust-boosters {
+        margin: 1.25rem 0.5rem;
+    }
+    
+    .trust-booster-text {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .trust-badges-mini {
+        gap: 0.75rem;
+    }
+    
+    .trust-badge-mini {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .how-it-works .cta-button {
+        margin: 1.25rem 0.5rem 0;
+        width: calc(100% - 1rem);
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        min-height: 42px;
+        border-radius: 10px;
+    }
+    
+    /* Pricing Section - Very small screens */
+    .pricing {
+        padding: 2rem 0;
+    }
+    
+    .pricing h2 {
+        padding: 0;
+    }
+    
+    .ad-tier-cards {
+        gap: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .card {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .budget {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card small {
+        font-size: 0.75rem;
+    }
+    
+    /* Limited Offer - Very small screens */
+    .limited-offer {
+        padding: 2rem 0;
+    }
+    
+    .limited-offer .monogram-watermark {
+        font-size: 8rem;
+    }
+    
+    .limited-offer h2 {
+        padding: 0;
+    }
+    
+    .limited-offer .subtext {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    
+    .content-wrapper {
+        gap: 1.25rem;
+        margin: 0 0.5rem;
+    }
+    
+    .limited-offer .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        min-height: 42px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    .trust-list {
+        gap: 0.75rem;
+    }
+    
+    .trust-item {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .scandinavian-guarantee {
+        margin: 1.25rem 0.5rem;
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .success-metric {
+        margin: 1rem 0.5rem 0;
+        font-size: 0.75rem;
+    }
+    
+    /* About + Contact - Very small screens */
+    .about-contact {
+        padding: 2rem 0;
+    }
+    
+    .about-contact .monogram-watermark {
+        font-size: 8rem;
+    }
+    
+    .about-wrapper {
+        gap: 1.25rem;
+        margin: 0 0.5rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .founder-quote {
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1.25rem 0;
+    }
+    
+    .founder-quote p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .founder-quote cite {
+        font-size: 0.75rem;
+    }
+    
+    .contact-box {
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1.25rem 0;
+    }
+    
+    .contact-box h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-list li {
+        padding: 0.5rem 0;
+        font-size: 0.85rem;
+    }
+    
+    .sweden-badge {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.75rem;
+        border-radius: 18px;
+    }
+    
+    .about-image {
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    .image-overlay {
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .image-overlay .trust-badge {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.75rem;
+        border-radius: 18px;
+    }
+    
+    /* Footer - Very small screens */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer::before {
+        font-size: 120px;
+    }
+    
+    .footer-content {
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .footer-column {
+        gap: 0.75rem;
+    }
+    
+    .footer-logo {
+        height: 30px;
+    }
+    
+    .tagline {
+        font-size: 0.85rem;
+    }
+    
+    .footer-links {
+        gap: 0.5rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.8rem;
+        padding: 0.25rem 0;
+    }
+    
+    .contact-info li {
+        font-size: 0.8rem;
+    }
+    
+    .social-links {
+        gap: 0.75rem;
+    }
+    
+    .social-link {
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    
+    .footer-bottom {
+        padding-top: 1rem;
+    }
+    
+    .copyright {
+        font-size: 0.75rem;
+    }
+    
+    /* Sticky CTA - Very small screens */
+    .sticky-cta {
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .sticky-cta .cta-button {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        min-height: 42px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Global section mobile optimization for extremely small screens */
+    section {
+        padding: 1.5rem 0;
+    }
+    
+    section .container {
+        padding: 0 0.375rem;
+    }
+    
+    section h2 {
+        font-size: 1.375rem;
+        line-height: 1.4;
+        margin-bottom: 0.875rem;
+    }
+    
+    section h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    section p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.875rem;
+    }
+    
+    /* Hero Section - Extremely small screens */
+    .hero {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    .hero .subheadline {
+        font-size: 0.95rem;
+    }
+    
+    .hero .cta-button {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+        min-height: 40px;
+        border-radius: 8px;
+    }
+    
+    /* Why Trust Us - Extremely small screens */
+    .why-trust {
+        padding: 1.5rem 0;
+    }
+    
+    .trust-grid {
+        gap: 0.875rem;
+        margin: 0 0.375rem;
+    }
+    
+    .trust-item {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .trust-item .icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .trust-item h3 {
+        font-size: 0.9rem;
+    }
+    
+    /* Testimonials - Extremely small screens */
+    .testimonials {
+        padding: 1.5rem 0;
+    }
+    
+    .testimonials .monogram-watermark {
+        font-size: 6rem;
+    }
+    
+    .testimonials-grid {
+        gap: 0.875rem;
+        margin: 0 0.375rem;
+    }
+    
+    .testimonial-content {
+        padding: 0.875rem;
+    }
+    
+    .testimonial-content .quote {
+        font-size: 0.85rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .author-info h4 {
+        font-size: 0.85rem;
+    }
+    
+    .author-info p {
+        font-size: 0.7rem;
+    }
+    
+    .verified-badge {
+        padding: 0.25rem 0.375rem;
+        font-size: 0.6rem;
+    }
+    
+    .rating {
+        font-size: 0.9rem;
+        margin-top: 0.625rem;
+    }
+    
+    /* Trust Section - Extremely small screens */
+    .trust-section {
+        padding: 1.5rem 0;
+    }
+    
+    .trust-cards {
+        gap: 0.875rem;
+        margin: 0 0.375rem;
+    }
+    
+    .trust-card {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .trust-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .trust-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Stats Section - Extremely small screens */
+    .stats {
+        padding: 1.5rem 0;
+    }
+    
+    .stats-grid {
+        gap: 0.875rem;
+        margin: 0 0.375rem;
+    }
+    
+    .stat-item {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    .stat-item p {
+        font-size: 0.85rem;
+    }
+    
+    /* How It Works - Extremely small screens */
+    .how-it-works {
+        padding: 1.5rem 0;
+    }
+    
+    .steps {
+        gap: 1rem;
+        margin: 0 0.375rem;
+    }
+    
+    .step {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .step h3 {
+        font-size: 0.9rem;
+    }
+    
+    .step p {
+        font-size: 0.8rem;
+    }
+    
+    .trust-boosters {
+        margin: 1rem 0.375rem;
+    }
+    
+    .trust-booster-text {
+        font-size: 0.85rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .trust-badges-mini {
+        gap: 0.625rem;
+    }
+    
+    .trust-badge-mini {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.7rem;
+    }
+    
+    .how-it-works .cta-button {
+        margin: 1rem 0.375rem 0;
+        width: calc(100% - 0.75rem);
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+        min-height: 40px;
+        border-radius: 8px;
+    }
+    
+    /* Pricing Section - Extremely small screens */
+    .pricing {
+        padding: 1.5rem 0;
+    }
+    
+    .ad-tier-cards {
+        gap: 0.875rem;
+        margin: 0 0.375rem;
+    }
+    
+    .card {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .budget {
+        font-size: 0.95rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    .card small {
+        font-size: 0.7rem;
+    }
+    
+    /* Limited Offer - Extremely small screens */
+    .limited-offer {
+        padding: 1.5rem 0;
+    }
+    
+    .limited-offer .monogram-watermark {
+        font-size: 6rem;
+    }
+    
+    .content-wrapper {
+        gap: 1rem;
+        margin: 0 0.375rem;
+    }
+    
+    .limited-offer .cta-button {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+        min-height: 40px;
+        border-radius: 8px;
+        margin-bottom: 0.875rem;
+    }
+    
+    .trust-list {
+        gap: 0.625rem;
+    }
+    
+    .trust-item {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.7rem;
+    }
+    
+    .scandinavian-guarantee {
+        margin: 1rem 0.375rem;
+        padding: 0.625rem;
+        font-size: 0.7rem;
+    }
+    
+    .success-metric {
+        margin: 0.875rem 0.375rem 0;
+        font-size: 0.7rem;
+    }
+    
+    /* About + Contact - Extremely small screens */
+    .about-contact {
+        padding: 1.5rem 0;
+    }
+    
+    .about-contact .monogram-watermark {
+        font-size: 6rem;
+    }
+    
+    .about-wrapper {
+        gap: 1rem;
+        margin: 0 0.375rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.375rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .description {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    
+    .founder-quote {
+        padding: 0.875rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+    }
+    
+    .founder-quote p {
+        font-size: 0.85rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .founder-quote cite {
+        font-size: 0.7rem;
+    }
+    
+    .contact-box {
+        padding: 0.875rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+    }
+    
+    .contact-box h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .contact-list li {
+        padding: 0.375rem 0;
+        font-size: 0.8rem;
+    }
+    
+    .sweden-badge {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.7rem;
+        border-radius: 16px;
+    }
+    
+    .about-image {
+        height: 150px;
+        border-radius: 8px;
+    }
+    
+    .image-overlay {
+        bottom: 0.375rem;
+        left: 0.375rem;
+        right: 0.375rem;
+    }
+    
+    .image-overlay .trust-badge {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.7rem;
+        border-radius: 16px;
+    }
+    
+    /* Footer - Extremely small screens */
+    .footer {
+        padding: 1.5rem 0 0.875rem;
+    }
+    
+    .footer::before {
+        font-size: 100px;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-column {
+        gap: 0.625rem;
+    }
+    
+    .footer-logo {
+        height: 28px;
+    }
+    
+    .tagline {
+        font-size: 0.8rem;
+    }
+    
+    .footer-links {
+        gap: 0.375rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
+    }
+    
+    .contact-info li {
+        font-size: 0.75rem;
+    }
+    
+    .social-links {
+        gap: 0.625rem;
+    }
+    
+    .social-link {
+        padding: 0.375rem;
+        border-radius: 4px;
+    }
+    
+    .footer-bottom {
+        padding-top: 0.875rem;
+    }
+    
+    .copyright {
+        font-size: 0.7rem;
+    }
+    
+    /* Sticky CTA - Extremely small screens */
+    .sticky-cta {
+        bottom: 0.375rem;
+        left: 0.375rem;
+        right: 0.375rem;
+    }
+    
+    .sticky-cta .cta-button {
+        padding: 0.625rem 0.875rem;
+        font-size: 0.85rem;
+        min-height: 40px;
+        border-radius: 6px;
+    }
+}
