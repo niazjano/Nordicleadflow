@@ -2933,3 +2933,764 @@ section h2 {
         overflow-x: hidden;
     }
 }
+
+/* Mobile Calendar Section Optimizations */
+@media (max-width: 768px) {
+    .calendar {
+        padding: 3rem 0;
+    }
+    
+    .calendar::before {
+        font-size: 12rem;
+        opacity: 0.02;
+    }
+    
+    .booking-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .booking-content {
+        padding-right: 0;
+        order: 1;
+    }
+    
+    .calendar-container {
+        order: 2;
+        padding: 1.5rem;
+        border-radius: 16px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .calendar h2 {
+        font-size: 1.875rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .calendar .subheadline {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+    
+    .security-badge {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        border-radius: 25px;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .security-badge svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .expectations {
+        margin: 2rem 0;
+    }
+    
+    .expectations h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .expectations-list li {
+        padding: 0.875rem 1.25rem;
+        margin-bottom: 0.875rem;
+        border-radius: 12px;
+    }
+    
+    .expectations-list li svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .expectations-list li span {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .trust-badges {
+        flex-direction: column;
+        gap: 0.875rem;
+        margin: 1.5rem 0;
+    }
+    
+    .trust-badge {
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    
+    .trust-badge svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .trust-badge span {
+        font-size: 0.875rem;
+    }
+    
+    .testimonial {
+        margin-top: 2rem;
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+    
+    .testimonial p {
+        font-size: 1rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .testimonial cite {
+        font-size: 0.875rem;
+    }
+    
+    .backup-options {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .backup-options p {
+        font-size: 0.9rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .backup-link {
+        display: block;
+        margin: 0.75rem 0;
+        padding: 0.75rem 1rem;
+        background: rgba(26, 54, 93, 0.05);
+        border-radius: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+    }
+    
+    .backup-link:hover {
+        background: rgba(26, 54, 93, 0.1);
+        transform: translateY(-1px);
+    }
+    
+    /* Calendly widget mobile optimization */
+    .calendly-inline-widget {
+        min-width: 100% !important;
+        height: 600px !important;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar {
+        padding: 2.5rem 0;
+    }
+    
+    .calendar::before {
+        font-size: 10rem;
+    }
+    
+    .booking-wrapper {
+        gap: 1.5rem;
+        margin: 0 0.75rem;
+    }
+    
+    .calendar-container {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .calendar h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .calendar .subheadline {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .security-badge {
+        padding: 0.625rem 1rem;
+        margin-bottom: 1.25rem;
+        font-size: 0.8rem;
+    }
+    
+    .security-badge svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .expectations {
+        margin: 1.5rem 0;
+    }
+    
+    .expectations h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+    
+    .expectations-list li {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.75rem;
+        border-radius: 10px;
+    }
+    
+    .expectations-list li svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .expectations-list li span {
+        font-size: 0.9rem;
+    }
+    
+    .trust-badges {
+        gap: 0.75rem;
+        margin: 1.25rem 0;
+    }
+    
+    .trust-badge {
+        padding: 0.625rem 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .trust-badge svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .trust-badge span {
+        font-size: 0.8rem;
+    }
+    
+    .testimonial {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    
+    .testimonial p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .testimonial cite {
+        font-size: 0.8rem;
+    }
+    
+    .backup-options {
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    
+    .backup-options p {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .backup-link {
+        margin: 0.625rem 0;
+        padding: 0.625rem 0.875rem;
+        font-size: 0.85rem;
+        border-radius: 6px;
+    }
+    
+    /* Calendly widget optimization for smaller screens */
+    .calendly-inline-widget {
+        height: 550px !important;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        padding: 2rem 0;
+    }
+    
+    .calendar::before {
+        font-size: 8rem;
+    }
+    
+    .booking-wrapper {
+        gap: 1.25rem;
+        margin: 0 0.5rem;
+    }
+    
+    .calendar-container {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .calendar h2 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin-bottom: 0.75rem;
+    }
+    
+    .calendar .subheadline {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.4;
+    }
+    
+    .security-badge {
+        padding: 0.5rem 0.875rem;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        border-radius: 20px;
+    }
+    
+    .security-badge svg {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .expectations {
+        margin: 1.25rem 0;
+    }
+    
+    .expectations h3 {
+        font-size: 1rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .expectations-list li {
+        padding: 0.625rem 0.875rem;
+        margin-bottom: 0.625rem;
+        border-radius: 8px;
+    }
+    
+    .expectations-list li svg {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .expectations-list li span {
+        font-size: 0.85rem;
+    }
+    
+    .trust-badges {
+        gap: 0.625rem;
+        margin: 1rem 0;
+    }
+    
+    .trust-badge {
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+    }
+    
+    .trust-badge svg {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .trust-badge span {
+        font-size: 0.75rem;
+    }
+    
+    .testimonial {
+        margin-top: 1.25rem;
+        padding: 0.875rem;
+        border-radius: 10px;
+    }
+    
+    .testimonial p {
+        font-size: 0.85rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .testimonial cite {
+        font-size: 0.75rem;
+    }
+    
+    .backup-options {
+        margin-top: 1.25rem;
+        padding-top: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .backup-options p {
+        font-size: 0.8rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .backup-link {
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+    
+    /* Calendly widget optimization for very small screens */
+    .calendly-inline-widget {
+        height: 500px !important;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .calendar {
+        padding: 1.5rem 0;
+    }
+    
+    .calendar::before {
+        font-size: 6rem;
+    }
+    
+    .booking-wrapper {
+        gap: 1rem;
+        margin: 0 0.375rem;
+    }
+    
+    .calendar-container {
+        padding: 0.875rem;
+        border-radius: 8px;
+    }
+    
+    .calendar h2 {
+        font-size: 1.375rem;
+        margin-bottom: 0.625rem;
+    }
+    
+    .calendar .subheadline {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    
+    .security-badge {
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0.875rem;
+        font-size: 0.7rem;
+        border-radius: 18px;
+    }
+    
+    .security-badge svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .expectations {
+        margin: 1rem 0;
+    }
+    
+    .expectations h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .expectations-list li {
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 0.5rem;
+        border-radius: 6px;
+    }
+    
+    .expectations-list li svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .expectations-list li span {
+        font-size: 0.8rem;
+    }
+    
+    .trust-badges {
+        gap: 0.5rem;
+        margin: 0.875rem 0;
+    }
+    
+    .trust-badge {
+        padding: 0.375rem 0.625rem;
+        border-radius: 5px;
+    }
+    
+    .trust-badge svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .trust-badge span {
+        font-size: 0.7rem;
+    }
+    
+    .testimonial {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+    
+    .testimonial p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .testimonial cite {
+        font-size: 0.7rem;
+    }
+    
+    .backup-options {
+        margin-top: 1rem;
+        padding-top: 0.875rem;
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+    }
+    
+    .backup-options p {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .backup-link {
+        margin: 0.375rem 0;
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
+        border-radius: 4px;
+    }
+    
+    /* Calendly widget optimization for extremely small screens */
+    .calendly-inline-widget {
+        height: 450px !important;
+        border-radius: 6px;
+    }
+}
+
+/* Additional Calendly Widget Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Ensure Calendly widget is fully responsive */
+    .calendar-container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Force Calendly widget to be mobile-friendly */
+    .calendly-inline-widget {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: 600px !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Ensure Calendly iframe is properly sized */
+    .calendly-inline-widget iframe {
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+        border-radius: 12px !important;
+    }
+    
+    /* Improve calendar container mobile layout */
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 600px;
+    }
+    
+    /* Better mobile spacing for calendar section */
+    .calendar .container {
+        padding: 0 1rem;
+    }
+    
+    /* Improve mobile touch targets */
+    .calendar-container * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Better mobile scrolling for calendar content */
+    .calendar {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendly-inline-widget {
+        height: 550px !important;
+        border-radius: 10px !important;
+    }
+    
+    .calendly-inline-widget iframe {
+        border-radius: 10px !important;
+    }
+    
+    .calendar-container {
+        min-height: 550px;
+    }
+    
+    .calendar .container {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendly-inline-widget {
+        height: 500px !important;
+        border-radius: 8px !important;
+    }
+    
+    .calendly-inline-widget iframe {
+        border-radius: 8px !important;
+    }
+    
+    .calendar-container {
+        min-height: 500px;
+    }
+    
+    .calendar .container {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .calendly-inline-widget {
+        height: 450px !important;
+        border-radius: 6px !important;
+    }
+    
+    .calendly-inline-widget iframe {
+        border-radius: 6px !important;
+    }
+    
+    .calendar-container {
+        min-height: 450px;
+    }
+    
+    .calendar .container {
+        padding: 0 0.375rem;
+    }
+}
+
+/* Mobile-specific calendar enhancements */
+@media (max-width: 768px) {
+    /* Improve mobile calendar section spacing */
+    .calendar {
+        margin: 0;
+        width: 100%;
+    }
+    
+    /* Better mobile calendar content flow */
+    .booking-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    /* Improve mobile expectations list */
+    .expectations-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+    
+    .expectations-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.875rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+    }
+    
+    .expectations-list li:active {
+        transform: scale(0.98);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Better mobile trust badges */
+    .trust-badges {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+    
+    .trust-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: rgba(26, 54, 93, 0.08);
+        border: 1px solid rgba(26, 54, 93, 0.15);
+        border-radius: 12px;
+        transition: all 0.2s ease;
+    }
+    
+    .trust-badge:active {
+        transform: translateY(-1px);
+        background: rgba(26, 54, 93, 0.12);
+    }
+    
+    /* Improve mobile testimonial */
+    .testimonial {
+        background: white;
+        border: 1px solid rgba(26, 54, 93, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    /* Better mobile backup options */
+    .backup-options {
+        background: rgba(26, 54, 93, 0.02);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+    
+    .backup-link {
+        background: white;
+        border: 1px solid rgba(26, 54, 93, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.2s ease;
+    }
+    
+    .backup-link:active {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Mobile calendar performance optimizations */
+@media (max-width: 768px) {
+    /* Optimize mobile animations */
+    .calendar * {
+        will-change: auto;
+    }
+    
+    /* Better mobile touch feedback */
+    .calendar button,
+    .calendar a,
+    .calendar .trust-badge,
+    .calendar .expectations-list li {
+        -webkit-tap-highlight-color: rgba(26, 54, 93, 0.1);
+        touch-action: manipulation;
+    }
+    
+    /* Improve mobile scrolling performance */
+    .calendar {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+    
+    /* Optimize mobile shadows for performance */
+    .calendar .testimonial,
+    .calendar .calendar-container,
+    .calendar .expectations-list li {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+}
